@@ -1,6 +1,6 @@
 package Utility;
 
-public abstract class Dimension {
+public final class Dimension {
     private int length;
     private int width;
     private int height;
