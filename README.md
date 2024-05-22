@@ -15,6 +15,7 @@ Acesta va include funcționalități `CRUD` și `interogări avansate` pentru a 
 - `Employee`
 - `Runway`
 - `Ticket`
+- `Aircraft`
 - `Airline`
 
 ### Acțiuni / Interogări
@@ -39,7 +40,7 @@ Condiția de punctare a proiectelor:
 * Să se implementeze cerințele date
 * Predare: Săptămâna `13`
 
-`Comenzile se vor da prin citirea de la tastatura!`
+`Comenzile se vor da prin citirea de la tastatura!` <br>
 `Nu neste necesara interfata grafică!`
 
 1. Definirea sistemului
@@ -49,14 +50,14 @@ Condiția de punctare a proiectelor:
 2. Implementare <br>
    Să se implementeze în limbajul Java o aplicație pe baza celor definite la primul punct. <br>
    Aplicația va conține:
-    - [ ] clase simple cu atribute private / protected si metode de acces
-    - [ ] clase imutabile (după caz)
+    - [x] clase simple cu atribute private / protected si metode de acces
+    - [x] clase imutabile (după caz)
     - [ ] tratare excepții
     - [ ] excepții custom
     - [ ] comparatori
     - [ ] lambda expressions
     - [ ] string builder / buffer
-    - [ ] cel puțin 2 colecții diferite capabile să gestioneze obiectele definite anterior (eg. `List, Set, Map`, etc.)
+    - [x] cel puțin 2 colecții diferite capabile să gestioneze obiectele definite anterior (eg. `List, Set, Map`, etc.)
       dintre care cel puțin una să fie sortată
     - [ ] se vor folosi array-uri uni-/bidimensionale în cazul în care nu se parcurg
       colecțiile până la data checkpoint-ului (nu este mandatory)
