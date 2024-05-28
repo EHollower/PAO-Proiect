@@ -1,0 +1,5 @@
+Boeing 747,Large passenger airplane,Commercial,500,400
+Airbus A320,Narrow-body jet airliner,Commercial,200,150
+Cessna 172,Single-engine light aircraft,General Aviation,4,4
+Bombardier Challenger 300,Super mid-size business jet,Business Jet,10,8
+Embraer E190,Narrow-body medium-range twin-engine jet airliner,Commercial,110,100

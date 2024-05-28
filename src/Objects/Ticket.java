@@ -1,18 +1,18 @@
 package Objects;
 
+import Utility.*;
 import Status.BookingStatus;
 
 public class Ticket {
-
-    private String ticketNumber;
+    private int id;
     private Passenger passenger;
     private Flight flight;
     private String seatClass; // Economy, Business, First Class
     private double price;
     private BookingStatus bookingStatus; // Status of the booking (Booked, Confirmed, Issued)
 
-    public Ticket(String ticketNumber, Passenger passenger, Flight flight, String seatClass, double price) {
-        this.ticketNumber = ticketNumber;
+    public Ticket(Passenger passenger, Flight flight, String seatClass, double price) {
+        this.id = Integer.parseInt(GenId.getInstance().generateUniqueId(-1));
         this.passenger = passenger;
         this.flight = flight;
         this.seatClass = seatClass;
@@ -21,6 +21,13 @@ public class Ticket {
     }
 
     // Getters and Setters (omitted for brevity)
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public Passenger getPassenger() {
+        return passenger;
+    }
 
     public void confirmBooking() {
         if (bookingStatus == BookingStatus.BOOKED) {
@@ -42,9 +49,9 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket: " + ticketNumber + "\n" +
+        return "Ticket: " + id + "\n" +
                 "Passenger: " + passenger.getName() + "\n" +
-                "Flight: " + flight.getFlightNumber() + " (" + flight.getDepartureAirport().getCity() + " - " + flight.getArrivalAirport().getCity() + ")" + "\n" +
+                "Flight: " + flight.getFlightId() + " (" + flight.getDepartureAirport().getCity() + " - " + flight.getArrivalAirport().getCity() + ")" + "\n" +
                 "Seat Class: " + seatClass + "\n" +
                 "Price: $" + price + "\n" +
                 "Status: " + bookingStatus;

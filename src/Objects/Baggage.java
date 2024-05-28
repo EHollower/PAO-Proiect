@@ -22,6 +22,10 @@ public class Baggage {
         this.status = status;
     }
 
+    protected Integer getWeight() {
+        return weight;
+    }
+
     @Override
     public String toString() {
         return "Baggage: " +

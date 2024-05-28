@@ -1,0 +1,4 @@
+300, 30, Asphalt
+400, 40, Concrete
+250, 25, Grass
+500, 50, Asphalt

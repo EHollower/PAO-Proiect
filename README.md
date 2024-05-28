@@ -29,8 +29,6 @@ Acesta va include funcționalități `CRUD` și `interogări avansate` pentru a 
 8. Căutarea Zborurilor după Destinație
 9. Verificarea disponibilității Zborului
 10. Generare raport Zborurui
-11. Adăugare Angajat
-12. Vizualizare Detalii Angajat
 
 ### Cerinte
 Fiecare student va lucra la un poriect individual. Proiectul este structurat în mai multe etape.
@@ -52,27 +50,23 @@ Condiția de punctare a proiectelor:
    Aplicația va conține:
     - [x] clase simple cu atribute private / protected si metode de acces
     - [x] clase imutabile (după caz)
-    - [ ] tratare excepții
-    - [ ] excepții custom
-    - [ ] comparatori
-    - [ ] lambda expressions
-    - [ ] string builder / buffer
+    - [x] tratare excepții
+    - [x] excepții custom
+    - [x] comparatori
+    - [x] lambda expressions
+    - [x] string builder / buffer
     - [x] cel puțin 2 colecții diferite capabile să gestioneze obiectele definite anterior (eg. `List, Set, Map`, etc.)
       dintre care cel puțin una să fie sortată
-    - [ ] se vor folosi array-uri uni-/bidimensionale în cazul în care nu se parcurg
-      colecțiile până la data checkpoint-ului (nu este mandatory)
-    - [ ] utilizare moștenire pentru crearea de clase adiționale și utilizarea lor în cadrul colecțiilor;
-    - [ ] cel puțin o clasă serviciu care să expună operațiile sistemului
-    - [ ] o clasă Main din care sunt făcute apeluri către servicii
-    - [ ] Singelton patter
-    - [ ] conceptele de bază (abstractizare, mostenire, polimorfism) -> metodele din services si repository`s
-      să fie expuse de interfete(sau clase abstracte dupa caz)
-    - [ ] să se foloseasca lucrul cu fisiere (ex: audit operatii executate, diferite rapoarte ale datelor din baza etc), 
+    - [x] utilizare moștenire pentru crearea de clase adiționale și utilizarea lor în cadrul colecțiilor;
+    - [x] o clasă Main din care sunt făcute apeluri către servicii
+    - [x] Singelton pattern
+    - [x] conceptele de bază (abstractizare, mostenire, polimorfism) -> metodele din services si repository`s să fie expuse de interfete(sau clase abstracte dupa caz)
+    - [x] să se foloseasca lucrul cu fisiere (ex: audit operatii executate, diferite rapoarte ale datelor din baza etc), 
    minim o actiune cu fisiere
 3. Extindeți proiectul prin realizarea persistenței utilizând o bază de date relațională și JDBC
-    - [ ] Să se realizeze servicii care să expună operații de tip create, read, update și delete pentru cel puțin 4
+    - [x] Să se realizeze servicii care să expună operații de tip create, read, update și delete pentru cel puțin 4
       dintre clasele definite. Se vor realiza servicii singleton generice pentru scrierea și citirea din baza de date.
 
 4. Realizarea unui serviciu de audit
-    - [ ] Se va realiza un serviciu care să scrie într-un fișier de tip CSV de fiecare dată când este
+    - [x] Se va realiza un serviciu care să scrie într-un fișier de tip CSV de fiecare dată când este
       executată una dintre acțiunile descrise. Structura fișierului: nume_acțiune, timestamp.
